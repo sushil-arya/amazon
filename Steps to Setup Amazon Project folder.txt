@@ -1,0 +1,66 @@
+Important To Create Project Based on ReactJs Read Below
+=======================
+ReactJs
+=================================
+1. Install Node.js
+2. Type command into the terminal:
+   setting up ReactJs Environment By installing package -globally [create-react-app]
+   > npm install -g create-react-app
+
+   if it done with success then follow next step
+3. To create Project folder[amazon] Type next command into the terminal:
+  like : [npx create-react-app my-react-app]
+  >npx create-react-app amazon
+
+  --After successfully Project done then follow below step
+
+4. Goto the directory level of you project in my case:
+    >D:\>cd amazon
+
+    now run the server
+    >D:\amazon>npm start
+---------------------------
+Below message will appear
+---------------------------
+    Starting the development server...
+
+One of your dependencies, babel-preset-react-app, is importing the
+Compiled successfully!
+
+You can now view amazon in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.232.19:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+ 
+=========================================================================
+NOTE:
+
+If you have npx and Node.js installed, you can create a React application by using create-react-app.
+
+If you've previously installed create-react-app globally, it is recommended that you uninstall the package to ensure npx always uses the latest version of create-react-app.
+
+To uninstall, run this command: npm uninstall -g create-react-app.
+
+Run this command to create a React application named my-react-app:
+
+npx create-react-app my-react-app
+
+===============================
+
+Home Page Dimension
+=====================
+Header    1366 x 99
+Main      1366 x 4818
+Footer    1366 x 227
+
+========================
+
+Bootstrap Setup for Project
+===========================
+for this project v5
+npm i bootstrap@5.3.3
