@@ -63,4 +63,71 @@ Footer    1366 x 227
 Bootstrap Setup for Project
 ===========================
 for this project v5
-npm i bootstrap@5.3.3
+3 ways to integrate bootstrap in React project
+
+1. Using CDN (Link cdn and js in body of html file)
+2. By downloading zip bootstarp file
+3. Using "npm install react-bootstrap bootstrap" 
+   for react bootstrap go to the offical site "https://react-bootstrap.netlify.app/"
+
+NOTE (Take care of this): using CDN bootstrap is different and using react-bootstrap is different
+
+**************************************
+Day-2 (width x height)
+
+Header Top Dimension : 1366 x 60
+Header Bottom Dimension : 1366 x 30
+
+NOTE: Remove Parent height if menstioned to make parent flexible according to their children
+
+
+NOTE: In react every tag must have closing tag or (empty tag must be)self closing tag  like
+<br/>
+<img......../>
+<hr/>
+
+Qusetion: why we are removing the height of a image container
+
+Important NOTE: if the w-100 so no use of height then
+   s_main1{
+  /* will remove height:600px because in bootstrap css w-100*/
+  /*height: 600px;*/}
+
+=============================================
+  Over Laping One Container to Another by using 
+
+  In this case Main1 is parent and Main2 is child will overlap on Main1 container 
+  
+
+  Main1(position: relative) need to set as backward and Main2(position: absolute) need to be reflect in front so we will use 
+
+  Main1 is Parent container so (Relative)
+  Main2 is Child Container so (Abosolute)
+
+  Utility of Positions
+  ==============================
+  Relative and Abosolute concept
+  will give parent container as Relative and child as a Abosolute
+
+  like example:(but in my care top and start would be 0 or 50 cannot set mannual so I will not use top-0 and start-0)
+  
+  Original Code
+  ---------------------------------------------------------------
+  <div class="position-relative">
+      <div class="position-absolute top-0 start-0"></div>
+  </div>
+
+ In my case (i will remove top-0 start-0)
+ ----------------------------------------------------------------
+ <div class="position-relative">
+      <div class="position-absolute "></div>
+  </div>
+
+ Set top value in css and z-index to bring the container front
+ -----------------------------------------------------------------
+    .s_main2{
+      height: 422px;
+      z-index: 3;
+      top: 250px;
+    }
+

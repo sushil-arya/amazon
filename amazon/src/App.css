@@ -38,15 +38,39 @@
 } */
 
 header{
-  height:99px;
+  
   border: 1px dashed red;
   background: #131921
 }
 
+.s_header_top{
+  height: 60px;
+  border: 1px dashed green;
+}
+
+.s_header_bottom{
+  height: 39px;
+  border: 1px dashed purple;
+}
 .s_main{
   height: 4818px;
   border: 1px dashed blue;
   background: #eaeded;
+}
+
+.s_main1{
+  /* will remove height:600px because in bootstrap css w-100*/
+  /*height: 600px;*/
+  border: 1px dashed orangered;
+}
+
+.s_main2{
+  height: 422px;
+  border: 1px dashed black;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+  top: 350px;
+  
 }
 
 footer{
